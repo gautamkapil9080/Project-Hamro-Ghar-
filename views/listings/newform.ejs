@@ -1,0 +1,43 @@
+    <% layout("/layout/boilerplate") %>
+    <h1 style="text-align:center">Add New Lists</h1>
+    <form method="POST" action="/listings/new/add" novalidate class="needs-validation">
+        <div class="mb-3">
+        <lable for="title" class="form-lable">Title</lable>
+        <input type="text" placeholder="Enter Title" name="Title" class="form-control" required ><br>
+        <div class="invalid-feedback">Enter Title</div>
+        <div class="valid-feedback">Title Looking Good!</div>
+    </div>
+
+    <div class="mb-3">
+        <lable for="descriptions" class="form-lable">Details</lable>
+        <input type="text" placeholder="Enter Descriptions" name="Description" class="form-control" required ><br>
+        <div class="invalid-feedback">Enter Description shortly</div>
+        <div class="valid-feedback">Description Done!</div>
+    </div>
+
+     <div class="mb-3">
+        <lable for="number" class="form-lable">Phone number</lable>
+        <input type="text" placeholder="Enter Phone number" name="Phone Number" class="form-control" required pattern="[0-9]{10}"  maxlength="10"  inputmode="numeric"><br>
+        <div class="invalid-feedback">Number Should be at least 10 digits</div>
+        <div class="valid-feedback"> Number is Looking Good!</div>
+    </div>
+
+    <div class="mb-3">
+        <lable for="Price" class="form-lable">Price Per day</lable>
+        <input type="Number" placeholder="Price for Day" name="Price" class="form-control" required><br>
+        <div class="invalid-feedback">Enter Price</div>
+        <div class="nvalid-feedback">Price Good!</div>
+    </div>
+
+    <div class="mb-3">
+        <lable for="Locations" class="form-lable">Locations</lable>
+        <input type="text" placeholder="Enter Locations" name="Location" class="form-control" required><br>
+    </div>
+
+    <div class="mb-3">
+        <lable for="Country" class="form-lable">Country</lable>
+        <input type="text" placeholder="Country" name="Country" class="form-control" required><br>
+    </div class="mb-3">
+        <button class="btn-desgin">Create a new list</button>
+        <script src="/js/script_for_newform.js"></script>
+    </form>

@@ -1,0 +1,33 @@
+<% layout("/layout/boilerplate") %>
+<body>
+
+    <div class="col-8 offset-2">
+        <h2 class="heading-showdetails"><%=detailValue.Title%></h2>
+    </div>
+        
+     <div class="card col-6 offset-3">
+         <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" 
+        class="card-img-top show-img" alt="..."
+        style="height:20rem;"/>
+    
+      <div class="card-body"> 
+        <p class="card-text" > 
+        <%=detailValue.Title%> <br>
+        <%=detailValue.Description%> <br>
+         <%=detailValue.Price%> Per night <br>
+         <%=detailValue.Location%> <br>
+          <%=detailValue.Country%> <br>
+        </p>       
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <form method="GET" action="/listings/<%=detailValue._id%>/editthis">
+            <button>Make Changes</button>
+        </form>
+         <form method="GET" action="#">
+            <button>Delete</button>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+.fa-regular{
+    color: red;
+}
+
+.nav-link{
+    color:black !important;
+    font-size:medium ! important;
+}
+
+/* For the Footer  */
+.f-infolink a{
+    text-decoration:none ;
+    color:black;
+}
+
+.f-infolink a:hover{
+    text-decoration:underline;
+    color:black;
+}
+
+/* To make all the items in the align way: */
+
+
+.f-info{
+    text-align:center;
+    height:5rem;
+    background-color:#ebebeb;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:space-evenly;
+}
+.f-infolink{
+    width: 100%;
+}
+.f-infosocial{
+    width:100%;
+    vertical-align:middle;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.f-infosocial i{
+    margin-right:1rem;
+    font-size:1.2rem;
+}
+
+/* For the card desgin */
+.card{
+    border:none !important;
+    margin-bottom:2rem;
+    margin-top: 1.5rem !important;
+}
+
+.card-img-top{
+    border-radius:1rem !important;
+    width:100% !important;
+    object-fit:cover ! important;
+}
+.card-body{
+    padding:0 ! important ;
+}
+.card-text{
+    text-align:center;
+}
+/* For the text only  */
+.card-text p{
+    font-weight:400;
+
+
+}
+.alink{
+    text-decoration:none !important;
+    color:black;
+}
+.btn-desgin{
+    background-color:red;
+    color:White;
+    border:none;
+}
+/* For the heading control for the show details */
+.heading-showdetails{
+    text-align:center;
+    margin-top:.5rem !important;
+}
+.show-img{
+    height:30vh !important;
+}
+.card-text{
+    margin-top:0.9rem !important;
+}
+.buttons{
+    display:flex;
+    gap:1rem;
+}

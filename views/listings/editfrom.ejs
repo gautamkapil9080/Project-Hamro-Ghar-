@@ -1,0 +1,41 @@
+ <% layout("/layout/boilerplate") %>
+    <h1 style="text-align:center">Make Changes In The Lists</h1>
+    <form method="POST" action="/listings/new/add" novalidate class="needs-validation">
+        <div class="mb-3">
+        <lable for="title" class="form-lable">Title</lable>
+        <input type="text" name="Title" class="form-control" value= <%=detailValue.Title%> required><br>
+         <div class="invalid-feedback">Donot Live Blank Title!</div>
+        <div class="valid-feedback">Title Looking Good!</div>
+    </div>
+
+    <div class="mb-3">
+        <lable for="descriptions" class="form-lable">Details</lable>
+        <input type="text" name="Description" class="form-control" value=<%=detailValue.Description%> required><br>
+         <div class="invalid-feedback">Enter Descriptions</div>
+        <div class="valid-feedback">Descriptions Looking Good!</div>
+    </div>
+
+     <div class="mb-3">
+        <lable for="number" class="form-lable">Phone number</lable>
+        <input type="number"  name="Phone Number" class="form-control" value=<%=detailValue%> required><br>
+         <div class="invalid-feedback">Enter Your Phone Number</div>
+        <div class="valid-feedback">Enter the Valid Feedback!</div>
+    </div>
+
+    <div class="mb-3">
+        <lable for="Price" class="form-lable">Price Per day</lable>
+        <input type="number" name="Price" class="form-control" value=<%=detailValue.Price%>required ><br>
+    </div>
+
+    <div class="mb-3">
+        <lable for="Locations" class="form-lable">Locations</lable>
+        <input type="text" name="Location" class="form-control" value=<%=detailValue.Location%>><br>
+    </div>
+
+    <div class="mb-3">
+        <lable for="Country" class="form-lable">Country</lable>
+        <input type="text" placeholder="Country" name="Country" class="form-control" value=<%=detailValue.Country%>><br>
+    </div class="mb-3">
+        <button class="btn-desgin">Make Changes</button>
+    </form>
+    <script src="/js/script_for_newform.js"></script>
